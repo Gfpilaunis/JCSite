@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------------ VARIABLES ------------ */
+:root{
+  /* FONT */
+  --font: 'Poppins', sans-serif;
+
+  /* COLORS */
+  --color: #9176FF;
+  --bg-color: #f4f4f4;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -343,6 +355,35 @@ nav {
     padding-top: 5vh;
 }
 
+::-webkit-scrollbar{
+    height: 2vh;
+}
+
+::-webkit-scrollbar-track{
+   background-color: #f1f1f1;
+    border-radius: 5%;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #969DAA;
+    border-radius: 5%;
+}
+
+::-webkit-scrollbar-thumb-hover{
+    background-color: #4b4b4b;
+    border-radius: 5%;
+}
+
+#slider{
+    display: flex;
+    width: 48vw;
+    gap: 1vw;
+    height: max-content;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    
+}
+
 #titulo_04 {
     display: flex;
     padding-top: 5vh;
@@ -359,12 +400,13 @@ nav {
 }
 
 #depoimento_pessoas {
-    padding-left: 1vw;
-    margin-left: 2vw;
     background-color: #525d75;
+    margin-bottom: 1vh;
     height: 65vh;
-    width: 15.75vw;
+    width: 15vw;
     display: flex;
+    flex: 0 0 15vw;
+    scroll-snap-align: start;
     flex-direction: column;
     border-radius: 5vw;
     float: left;
@@ -466,6 +508,8 @@ nav {
 
 
 
+
+
 /**@media (max-width: 950px) {
     #inicio{
         display: block;
@@ -519,3 +563,4 @@ nav {
         margin: auto;
     }
 }
+
