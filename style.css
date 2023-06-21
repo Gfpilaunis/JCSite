@@ -230,6 +230,7 @@ nav {
     width: 100vw;
     height: 100vh;
     padding-top: 5vh;
+
 }
 
 #servico_textos {
@@ -294,6 +295,7 @@ nav {
     height: 100vh;
     text-align: left;
     padding-top: 5vh;
+
 }
 
 #texto_com_icone2 {
@@ -336,7 +338,6 @@ nav {
     height: 100vh;
     justify-content: center;
     padding-top: 5vh;
-
 }
 
 ::-webkit-scrollbar {
