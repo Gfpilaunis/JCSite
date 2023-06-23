@@ -613,7 +613,7 @@ nav {
         cursor: pointer;
         position:absolute;
         display: block;
-        top:70vh;
+        top:80%;
         width: 0;
         height: 0;
         border-style: solid;
@@ -654,7 +654,7 @@ nav {
         margin: auto;
         font-size: min(2.25vh, 2.25vw);
     }
----
+
     #contatos {
         display: flex;
         flex-direction: column;
@@ -723,6 +723,17 @@ nav {
 
 }
 
+@media (max-width: 700px) {
+    .arrow {
+        top:76%;
+    }
+}
+
+@media (max-width: 400px) {
+    .arrow {
+        top:56%;
+    }
+}
 .nav-list.active {
     transform: translateX(0);
 }
